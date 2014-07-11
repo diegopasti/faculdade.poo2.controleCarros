@@ -6,14 +6,41 @@ Created on 10/07/2014
 from Carro import Carro
 
 
-Veiculo = Carro()
-Veiculo.ligar()
-Veiculo.acelerar()
-Veiculo.frear()
-Veiculo.desfrear()
-Veiculo.desacelerar()
-Veiculo.frear()
-Veiculo.desligar()
+def RealizarTestDrive():
+    print
+    print "####################################"
+    print "##           TEST DRIVE           ##"
+    print "####################################"
+    
+    Veiculo = Carro()
+    Veiculo.ligar()
+    Veiculo.acelerar()
+    Veiculo.desacelerar()
+    Veiculo.frear()
+    Veiculo.desligar()
 
+def RealizarTesteTacografo():
+    print
+    print "####################################"
+    print "##         TEST TACOGRAFO         ##"
+    print "####################################"
+    
+    Veiculo = Carro()
+    Veiculo.ligar()
+    Veiculo.acelerar()
+    Veiculo.acelerar()
+    Veiculo.acelerar()
+    Veiculo.acelerar()
+    Veiculo.acelerar()
+    Veiculo.ControleComponente.Tacografo.MarcarVelocimetro()
+    Veiculo.acelerar()
+    Veiculo.acelerar()
+    Veiculo.frear()
+    Veiculo.desligar()
+    Veiculo.ControleComponente.Tacografo.restaurarVelocimetro()
+
+
+RealizarTestDrive()
+RealizarTesteTacografo()
 
 

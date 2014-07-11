@@ -13,13 +13,14 @@ class Componente():
         pass
 
     def desativar(self):
-        print "Desativando: ",self
+        print "Desativando: ",self.__class__
         self.Ativo = False
 
     def ativar(self):
-        print "Ativando: ",self        
+        print "Ativando: ",self.__class__  
         self.Ativo = True
-
+        
+        
 class Freio(Componente):
 
     def __init__(self,mediador):
