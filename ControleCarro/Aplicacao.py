@@ -15,6 +15,7 @@ def RealizarTestDrive():
     Veiculo = Carro()
     Veiculo.ligar()
     Veiculo.acelerar()
+    Veiculo.frear()
     Veiculo.desacelerar()
     Veiculo.frear()
     Veiculo.desligar()
@@ -29,9 +30,6 @@ def RealizarTesteTacografo():
     Veiculo.ligar()
     Veiculo.acelerar()
     Veiculo.acelerar()
-    Veiculo.acelerar()
-    Veiculo.acelerar()
-    Veiculo.acelerar()
     Veiculo.ControleComponente.Tacografo.MarcarVelocimetro()
     Veiculo.acelerar()
     Veiculo.acelerar()
@@ -40,7 +38,7 @@ def RealizarTesteTacografo():
     Veiculo.ControleComponente.Tacografo.restaurarVelocimetro()
 
 
-RealizarTestDrive()
+#RealizarTestDrive()
 RealizarTesteTacografo()
 
 
